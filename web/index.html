@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vocab Voyage · word adventure for Char</title>
+<meta name="theme-color" content="#0f172a">
+<meta name="description" content="EXAMPLE word-adventure learning game — flash cards, quizzes, writing nudges. Offline-safe. Progress in localStorage.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<div class="wave w1" aria-hidden="true"></div>
+<div class="wave w2" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="42" height="42">
+        <defs>
+          <linearGradient id="vg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#60a5fa"/>
+          </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="20" fill="#0c1a2e" stroke="url(#vg)" stroke-width="2.2"/>
+        <path d="M10 28 Q18 14 24 22 Q30 30 38 18" fill="none" stroke="url(#vg)" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="38" cy="18" r="3" fill="#fbbf24"/>
+        <path d="M14 34h20" stroke="#34d399" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Vocab Voyage</h1>
+      <p class="tag">EXAMPLE decks · word adventure · progress stays on this device</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill warn" title="Practice content only — not from school">EXAMPLE deck</span>
+    <span class="pill" id="streakPill">🔥 0 streak</span>
+    <span class="pill stars" id="starsPill">⭐ 0</span>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Voyage screens">
+  <button class="tab active" data-view="home" role="tab" aria-selected="true">Home</button>
+  <button class="tab" data-view="map" role="tab" aria-selected="false">Map</button>
+  <button class="tab" data-view="play" role="tab" aria-selected="false">Play</button>
+  <button class="tab" data-view="progress" role="tab" aria-selected="false">Progress</button>
+  <button class="tab" data-view="about" role="tab" aria-selected="false">About</button>
+</nav>
+
+<main>
+  <!-- HOME -->
+  <section id="view-home" class="view active" role="tabpanel">
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TokenMax · learning for Char</p>
+        <h2>Sail island to island — grow your word power</h2>
+        <p class="lede">Flash cards, multiple choice, fill-in-the-blank, speed runs, and short writing nudges. All packs are clearly labeled <strong>EXAMPLE</strong> — practice only, not school homework.</p>
+        <div class="hero-cta">
+          <button type="button" class="btn primary lg" data-goto="map">Open the map</button>
+          <button type="button" class="btn ghost lg" id="btnQuickPlay">Quick play</button>
+        </div>
+      </div>
+      <div class="hero-card panel glow">
+        <p class="eyebrow">Today's voyage</p>
+        <div class="stat-row" id="homeStats"></div>
+        <p class="hint" id="homeHint">Pick an island on the Map to begin.</p>
+      </div>
+    </div>
+    <div class="home-grid">
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Islands</h3>
+          <p class="hint">4 EXAMPLE packs · ~40 words</p>
+        </div>
+        <div class="island-row" id="homeIslands"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Modes</h3>
+          <p class="hint">Choose how you practice</p>
+        </div>
+        <div class="mode-grid" id="homeModes"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section id="view-map" class="view" role="tabpanel" hidden>
+    <div class="panel map-panel">
+      <div class="panel-head">
+        <h3>Voyage map</h3>
+        <p class="hint">Tap an island · all decks marked EXAMPLE</p>
+      </div>
+      <div class="ocean" id="oceanMap"></div>
+    </div>
+  </section>
+
+  <!-- PLAY -->
+  <section id="view-play" class="view" role="tabpanel" hidden>
+    <div class="play-setup panel" id="playSetup">
+      <div class="panel-head">
+        <h3>Set sail</h3>
+        <p class="hint">Pick pack + mode</p>
+      </div>
+      <label class="field">
+        <span>Island (EXAMPLE pack)</span>
+        <select id="packSelect"></select>
+      </label>
+      <label class="field">
+        <span>Mode</span>
+        <select id="modeSelect">
+          <option value="flash">Flash cards</option>
+          <option value="mc">Multiple choice</option>
+          <option value="blank">Fill-in-the-blank</option>
+          <option value="speed">Speed run</option>
+          <option value="write">Writing nudge</option>
+        </select>
+      </label>
+      <button type="button" class="btn primary lg" id="btnStart">Start voyage</button>
+    </div>
+
+    <div class="play-arena panel glow" id="playArena" hidden>
+      <div class="play-bar">
+        <span id="playMeta"></span>
+        <span id="playScore"></span>
+        <button type="button" class="btn ghost sm" id="btnQuit">Quit</button>
+      </div>
+      <div id="playBody"></div>
+      <div class="play-actions" id="playActions"></div>
+    </div>
+
+    <div class="play-done panel" id="playDone" hidden>
+      <h3>Island cleared!</h3>
+      <div class="stat-row" id="doneStats"></div>
+      <div class="hero-cta">
+        <button type="button" class="btn primary" id="btnAgain">Sail again</button>
+        <button type="button" class="btn ghost" data-goto="map">Back to map</button>
+        <button type="button" class="btn ghost" data-goto="progress">See progress</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESS -->
+  <section id="view-progress" class="view" role="tabpanel" hidden>
+    <div class="panel">
+      <div class="panel-head">
+        <h3>Your voyage log</h3>
+        <p class="hint">Saved in <code>localStorage</code> · vocab-voyage.progress</p>
+      </div>
+      <div class="stat-row" id="progressStats"></div>
+      <div class="progress-packs" id="progressPacks"></div>
+      <div class="hero-cta" style="margin-top:1rem">
+        <button type="button" class="btn ghost" id="btnResetProgress">Reset progress</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="view-about" class="view" role="tabpanel" hidden>
+    <div class="panel">
+      <div class="panel-head">
+        <h3>About Vocab Voyage</h3>
+      </div>
+      <p class="lede">A warm, offline word-adventure for middle-school practice — built for Char's verbal strength and writing stretch. Flash cards, quizzes, speed runs, and self-check writing prompts.</p>
+      <div class="callout warn">
+        <strong>EXAMPLE deck only.</strong> Packs (Roots, Synonyms, Context Clues, SAT-ish starter) and definitions were written for this TokenMax burn build. They are <em>not</em> from any school list or curriculum. Treat them as practice samples.
+      </div>
+      <ul class="about-list">
+        <li>No accounts · progress stays in browser localStorage</li>
+        <li>Phone / iPad friendly · hash routes (#home #map #play #progress #about)</li>
+        <li>Writing nudges use a self-check rubric (not AI grading)</li>
+        <li>Offline single file: <code>dist/vocab-voyage.html</code></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>Vocab Voyage · EXAMPLE deck · TokenMax</span>
+  <span id="footWords">40 EXAMPLE words</span>
+</footer>
+
+<script>
+window.__WORDS__ = /*__WORDS__*/ null /*__/WORDS__*/;
+</script>
+<script>/*__APP__*/</script>
+</body>
+</html>

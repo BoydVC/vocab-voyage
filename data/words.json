@@ -1,0 +1,456 @@
+{
+  "meta": {
+    "title": "Vocab Voyage",
+    "label": "EXAMPLE deck",
+    "disclaimer": "All packs and definitions are EXAMPLE content for practice — not from any school curriculum. Public-domain-style glosses written for this app.",
+    "version": 1
+  },
+  "packs": [
+    {
+      "id": "roots",
+      "name": "Root Island",
+      "emoji": "🌴",
+      "color": "#34d399",
+      "blurb": "Greek & Latin roots that unlock dozens of words.",
+      "words": [
+        {
+          "id": "benevolent",
+          "word": "benevolent",
+          "pos": "adj",
+          "def": "kind and generous; wishing well for others",
+          "root": "bene- (well) + vol- (wish)",
+          "synonyms": ["kind", "charitable", "generous"],
+          "sentence": "The benevolent neighbor left cookies for every family on the street.",
+          "blank": "The _____ neighbor left cookies for every family on the street.",
+          "prompt": "Describe a benevolent act you have seen or imagined."
+        },
+        {
+          "id": "malicious",
+          "word": "malicious",
+          "pos": "adj",
+          "def": "intending to do harm; spiteful",
+          "root": "mal- (bad)",
+          "synonyms": ["spiteful", "mean", "harmful"],
+          "sentence": "Spreading a rumor just to hurt someone is a malicious choice.",
+          "blank": "Spreading a rumor just to hurt someone is a _____ choice.",
+          "prompt": "Why might someone act in a malicious way — and what is a better alternative?"
+        },
+        {
+          "id": "credible",
+          "word": "credible",
+          "pos": "adj",
+          "def": "believable; worthy of trust",
+          "root": "cred- (believe)",
+          "synonyms": ["believable", "trustworthy", "plausible"],
+          "sentence": "A credible source cites facts you can check.",
+          "blank": "A _____ source cites facts you can check.",
+          "prompt": "Name something that would make a news story more credible."
+        },
+        {
+          "id": "dictation",
+          "word": "dictation",
+          "pos": "n",
+          "def": "the act of speaking words for someone else to write down",
+          "root": "dict- (say)",
+          "synonyms": ["transcription", "command"],
+          "sentence": "During dictation, the teacher spoke slowly so everyone could write.",
+          "blank": "During _____, the teacher spoke slowly so everyone could write.",
+          "prompt": "Write a short sentence you would give as dictation to a friend."
+        },
+        {
+          "id": "portable",
+          "word": "portable",
+          "pos": "adj",
+          "def": "easy to carry or move",
+          "root": "port- (carry)",
+          "synonyms": ["movable", "lightweight", "handy"],
+          "sentence": "Her portable charger kept the phone alive on the field trip.",
+          "blank": "Her _____ charger kept the phone alive on the field trip.",
+          "prompt": "List three portable items you would pack for a day trip."
+        },
+        {
+          "id": "inspect",
+          "word": "inspect",
+          "pos": "v",
+          "def": "to look at carefully; examine",
+          "root": "spect- (look)",
+          "synonyms": ["examine", "check", "scrutinize"],
+          "sentence": "Before takeoff, the crew must inspect every seat belt.",
+          "blank": "Before takeoff, the crew must _____ every seat belt.",
+          "prompt": "What would you inspect carefully before buying a used bike?"
+        },
+        {
+          "id": "transport",
+          "word": "transport",
+          "pos": "v",
+          "def": "to carry from one place to another",
+          "root": "trans- (across) + port- (carry)",
+          "synonyms": ["carry", "ship", "move"],
+          "sentence": "Trucks transport fresh fruit from farms to stores.",
+          "blank": "Trucks _____ fresh fruit from farms to stores.",
+          "prompt": "How do people transport goods across an ocean?"
+        },
+        {
+          "id": "predict",
+          "word": "predict",
+          "pos": "v",
+          "def": "to say what will happen before it does",
+          "root": "pre- (before) + dict- (say)",
+          "synonyms": ["forecast", "foretell", "anticipate"],
+          "sentence": "Weather apps try to predict tomorrow's storms.",
+          "blank": "Weather apps try to _____ tomorrow's storms.",
+          "prompt": "Predict one thing that might happen at school next week — and why."
+        },
+        {
+          "id": "spectator",
+          "word": "spectator",
+          "pos": "n",
+          "def": "a person who watches an event",
+          "root": "spect- (look)",
+          "synonyms": ["viewer", "onlooker", "observer"],
+          "sentence": "Every spectator stood when the final goal was scored.",
+          "blank": "Every _____ stood when the final goal was scored.",
+          "prompt": "Would you rather be a spectator or a player — and why?"
+        },
+        {
+          "id": "benefit",
+          "word": "benefit",
+          "pos": "n",
+          "def": "an advantage or helpful result",
+          "root": "bene- (well)",
+          "synonyms": ["advantage", "gain", "plus"],
+          "sentence": "One benefit of reading every day is a bigger vocabulary.",
+          "blank": "One _____ of reading every day is a bigger vocabulary.",
+          "prompt": "What is one benefit of learning new words?"
+        }
+      ]
+    },
+    {
+      "id": "synonyms",
+      "name": "Synonym Cove",
+      "emoji": "🏝️",
+      "color": "#60a5fa",
+      "blurb": "Near-twins with different shades of meaning.",
+      "words": [
+        {
+          "id": "elated",
+          "word": "elated",
+          "pos": "adj",
+          "def": "very happy and excited",
+          "synonyms": ["thrilled", "joyful", "ecstatic"],
+          "sentence": "She felt elated when her story won the contest.",
+          "blank": "She felt _____ when her story won the contest.",
+          "prompt": "Write about a moment that left you elated."
+        },
+        {
+          "id": "reluctant",
+          "word": "reluctant",
+          "pos": "adj",
+          "def": "unwilling or hesitant to do something",
+          "synonyms": ["hesitant", "unwilling", "wary"],
+          "sentence": "He was reluctant to speak until he had practiced.",
+          "blank": "He was _____ to speak until he had practiced.",
+          "prompt": "Describe something you felt reluctant to try — and what changed."
+        },
+        {
+          "id": "scarce",
+          "word": "scarce",
+          "pos": "adj",
+          "def": "hard to find; not enough",
+          "synonyms": ["rare", "limited", "few"],
+          "sentence": "Fresh water can be scarce during a long drought.",
+          "blank": "Fresh water can be _____ during a long drought.",
+          "prompt": "Name something scarce in your life and how you save it."
+        },
+        {
+          "id": "vivid",
+          "word": "vivid",
+          "pos": "adj",
+          "def": "bright, clear, and full of life (often about images or memories)",
+          "synonyms": ["bright", "striking", "lifelike"],
+          "sentence": "Her vivid description made the island feel real.",
+          "blank": "Her _____ description made the island feel real.",
+          "prompt": "Describe a vivid memory using three colorful details."
+        },
+        {
+          "id": "cautious",
+          "word": "cautious",
+          "pos": "adj",
+          "def": "careful to avoid danger or mistakes",
+          "synonyms": ["careful", "wary", "prudent"],
+          "sentence": "A cautious climber always double-checks the rope.",
+          "blank": "A _____ climber always double-checks the rope.",
+          "prompt": "When is it smart to be cautious?"
+        },
+        {
+          "id": "enormous",
+          "word": "enormous",
+          "pos": "adj",
+          "def": "extremely large",
+          "synonyms": ["huge", "massive", "gigantic"],
+          "sentence": "An enormous wave crashed over the pier.",
+          "blank": "An _____ wave crashed over the pier.",
+          "prompt": "Compare something small to something enormous."
+        },
+        {
+          "id": "fragile",
+          "word": "fragile",
+          "pos": "adj",
+          "def": "easily broken or damaged",
+          "synonyms": ["delicate", "breakable", "frail"],
+          "sentence": "Handle the fragile glass ornaments with two hands.",
+          "blank": "Handle the _____ glass ornaments with two hands.",
+          "prompt": "What fragile thing do you treat carefully, and why?"
+        },
+        {
+          "id": "genuine",
+          "word": "genuine",
+          "pos": "adj",
+          "def": "real; not fake; sincere",
+          "synonyms": ["authentic", "real", "sincere"],
+          "sentence": "A genuine apology names what went wrong.",
+          "blank": "A _____ apology names what went wrong.",
+          "prompt": "How can you tell a compliment is genuine?"
+        },
+        {
+          "id": "immense",
+          "word": "immense",
+          "pos": "adj",
+          "def": "extremely large in size or amount",
+          "synonyms": ["vast", "huge", "tremendous"],
+          "sentence": "The mountain cast an immense shadow across the valley.",
+          "blank": "The mountain cast an _____ shadow across the valley.",
+          "prompt": "Use immense to describe a feeling, not just a size."
+        },
+        {
+          "id": "precise",
+          "word": "precise",
+          "pos": "adj",
+          "def": "exact and accurate",
+          "synonyms": ["exact", "accurate", "specific"],
+          "sentence": "Follow the precise measurements when baking the cake.",
+          "blank": "Follow the _____ measurements when baking the cake.",
+          "prompt": "When does being precise matter most?"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "name": "Context Cliffs",
+      "emoji": "⛰️",
+      "color": "#f472b6",
+      "blurb": "Guess meaning from surrounding clues — then lock it in.",
+      "words": [
+        {
+          "id": "ominous",
+          "word": "ominous",
+          "pos": "adj",
+          "def": "suggesting something bad is about to happen",
+          "synonyms": ["threatening", "foreboding", "menacing"],
+          "sentence": "Dark clouds and thunder created an ominous mood before the storm.",
+          "blank": "Dark clouds and thunder created an _____ mood before the storm.",
+          "prompt": "Describe an ominous setting without naming a monster."
+        },
+        {
+          "id": "meander",
+          "word": "meander",
+          "pos": "v",
+          "def": "to wander slowly without a clear path",
+          "synonyms": ["wander", "roam", "drift"],
+          "sentence": "We let the trail meander through the woods instead of cutting straight.",
+          "blank": "We let the trail _____ through the woods instead of cutting straight.",
+          "prompt": "Would you rather meander or rush — when and why?"
+        },
+        {
+          "id": "abrupt",
+          "word": "abrupt",
+          "pos": "adj",
+          "def": "sudden and unexpected; brief in a sharp way",
+          "synonyms": ["sudden", "sharp", "curt"],
+          "sentence": "The bus made an abrupt stop when a deer leapt into the road.",
+          "blank": "The bus made an _____ stop when a deer leapt into the road.",
+          "prompt": "Write a scene that ends with an abrupt change."
+        },
+        {
+          "id": "diligent",
+          "word": "diligent",
+          "pos": "adj",
+          "def": "hardworking and careful over time",
+          "synonyms": ["hardworking", "thorough", "persistent"],
+          "sentence": "Diligent practice turned her shaky handwriting into neat script.",
+          "blank": "_____ practice turned her shaky handwriting into neat script.",
+          "prompt": "What skill improved because you were diligent?"
+        },
+        {
+          "id": "perplexed",
+          "word": "perplexed",
+          "pos": "adj",
+          "def": "confused; puzzled",
+          "synonyms": ["puzzled", "baffled", "confused"],
+          "sentence": "The riddle left the whole class perplexed for ten minutes.",
+          "blank": "The riddle left the whole class _____ for ten minutes.",
+          "prompt": "Describe a time you felt perplexed — and how you figured it out."
+        },
+        {
+          "id": "sturdy",
+          "word": "sturdy",
+          "pos": "adj",
+          "def": "strong and solid; not easily broken",
+          "synonyms": ["strong", "solid", "robust"],
+          "sentence": "The sturdy bridge held even when trucks rolled across.",
+          "blank": "The _____ bridge held even when trucks rolled across.",
+          "prompt": "Compare something sturdy with something fragile."
+        },
+        {
+          "id": "glimpse",
+          "word": "glimpse",
+          "pos": "n",
+          "def": "a quick or incomplete look",
+          "synonyms": ["peek", "glance", "fleeting look"],
+          "sentence": "Through the trees she caught a glimpse of the ocean.",
+          "blank": "Through the trees she caught a _____ of the ocean.",
+          "prompt": "Write about a glimpse that changed someone's mind."
+        },
+        {
+          "id": "linger",
+          "word": "linger",
+          "pos": "v",
+          "def": "to stay longer than expected; to remain",
+          "synonyms": ["remain", "stay", "hover"],
+          "sentence": "The smell of rain seemed to linger long after the clouds passed.",
+          "blank": "The smell of rain seemed to _____ long after the clouds passed.",
+          "prompt": "What memories linger for you the longest?"
+        },
+        {
+          "id": "reluctant-ctx",
+          "word": "concede",
+          "pos": "v",
+          "def": "to admit something is true after resisting; to give way",
+          "synonyms": ["admit", "yield", "grant"],
+          "sentence": "After the evidence piled up, he had to concede the point.",
+          "blank": "After the evidence piled up, he had to _____ the point.",
+          "prompt": "When is it wise to concede an argument?"
+        },
+        {
+          "id": "thrive",
+          "word": "thrive",
+          "pos": "v",
+          "def": "to grow or do well",
+          "synonyms": ["flourish", "prosper", "succeed"],
+          "sentence": "Seedlings thrive when they get steady light and water.",
+          "blank": "Seedlings _____ when they get steady light and water.",
+          "prompt": "What helps you thrive — people, habits, or places?"
+        }
+      ]
+    },
+    {
+      "id": "sat",
+      "name": "SAT Starter Isles",
+      "emoji": "🧭",
+      "color": "#fbbf24",
+      "blurb": "EXAMPLE mid-level challenge words — practice only, not a real SAT list.",
+      "words": [
+        {
+          "id": "ambiguous",
+          "word": "ambiguous",
+          "pos": "adj",
+          "def": "open to more than one meaning; unclear",
+          "synonyms": ["unclear", "vague", "equivocal"],
+          "sentence": "The ambiguous note could mean either 'come early' or 'come later.'",
+          "blank": "The _____ note could mean either 'come early' or 'come later.'",
+          "prompt": "Rewrite an ambiguous sentence so it has only one clear meaning."
+        },
+        {
+          "id": "concise",
+          "word": "concise",
+          "pos": "adj",
+          "def": "brief and clear; using few words well",
+          "synonyms": ["brief", "terse", "succinct"],
+          "sentence": "A concise summary fits the whole plot into three sentences.",
+          "blank": "A _____ summary fits the whole plot into three sentences.",
+          "prompt": "Make a long sentence concise without losing the main idea."
+        },
+        {
+          "id": "inevitable",
+          "word": "inevitable",
+          "pos": "adj",
+          "def": "certain to happen; unavoidable",
+          "synonyms": ["unavoidable", "certain", "inescapable"],
+          "sentence": "With dark clouds rolling in, rain seemed inevitable.",
+          "blank": "With dark clouds rolling in, rain seemed _____.",
+          "prompt": "Is any outcome truly inevitable? Defend your answer in two sentences."
+        },
+        {
+          "id": "notorious",
+          "word": "notorious",
+          "pos": "adj",
+          "def": "famous for something bad",
+          "synonyms": ["infamous", "disreputable"],
+          "sentence": "The trail was notorious for muddy patches after rain.",
+          "blank": "The trail was _____ for muddy patches after rain.",
+          "prompt": "Name something notorious in fiction (not a real person) and why."
+        },
+        {
+          "id": "prudent",
+          "word": "prudent",
+          "pos": "adj",
+          "def": "showing careful good judgment",
+          "synonyms": ["wise", "careful", "sensible"],
+          "sentence": "It was prudent to pack an extra jacket for the chilly docks.",
+          "blank": "It was _____ to pack an extra jacket for the chilly docks.",
+          "prompt": "Describe a prudent choice you made this week."
+        },
+        {
+          "id": "resilient",
+          "word": "resilient",
+          "pos": "adj",
+          "def": "able to recover quickly from difficulty",
+          "synonyms": ["tough", "adaptable", "bouncy"],
+          "sentence": "Resilient plants bounced back after the frost.",
+          "blank": "_____ plants bounced back after the frost.",
+          "prompt": "What helps a person stay resilient after a setback?"
+        },
+        {
+          "id": "subtle",
+          "word": "subtle",
+          "pos": "adj",
+          "def": "not obvious; delicate or understated",
+          "synonyms": ["faint", "nuanced", "understated"],
+          "sentence": "The painting used a subtle shift of color to show sunset.",
+          "blank": "The painting used a _____ shift of color to show sunset.",
+          "prompt": "Describe a subtle clue in a mystery story."
+        },
+        {
+          "id": "vague",
+          "word": "vague",
+          "pos": "adj",
+          "def": "not clear or specific",
+          "synonyms": ["unclear", "fuzzy", "indefinite"],
+          "sentence": "His vague directions left us searching for the right pier.",
+          "blank": "His _____ directions left us searching for the right pier.",
+          "prompt": "Turn a vague plan into three specific steps."
+        },
+        {
+          "id": "advocate",
+          "word": "advocate",
+          "pos": "v/n",
+          "def": "to publicly support; a person who supports a cause",
+          "synonyms": ["support", "champion", "back"],
+          "sentence": "She chose to advocate for longer library hours.",
+          "blank": "She chose to _____ for longer library hours.",
+          "prompt": "What cause would you advocate for at school?"
+        },
+        {
+          "id": "analyze",
+          "word": "analyze",
+          "pos": "v",
+          "def": "to examine carefully by breaking into parts",
+          "synonyms": ["examine", "study", "break down"],
+          "sentence": "Scientists analyze water samples to check for safety.",
+          "blank": "Scientists _____ water samples to check for safety.",
+          "prompt": "Analyze why a character in a book made a tough choice."
+        }
+      ]
+    }
+  ]
+}
