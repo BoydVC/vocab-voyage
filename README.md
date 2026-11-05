@@ -1,6 +1,6 @@
 # Vocab Voyage
 
-Word-adventure learning game for Char (TokenMax burn). Sail EXAMPLE island packs — Roots, Synonyms, Context Clues, SAT-ish starter — with flash cards, multiple choice, fill-in-the-blank, speed runs, and writing nudges.
+Word-adventure learning game for Alex (TokenMax burn). Sail EXAMPLE island packs — Roots, Synonyms, Context Clues, SAT-ish starter — with flash cards, multiple choice, fill-in-the-blank, speed runs, and writing nudges.
 
 **Hard rule:** all decks are **EXAMPLE** practice content — not from any school curriculum. Progress lives in `localStorage`. Offline-safe. No accounts. No cloud agents.
 
